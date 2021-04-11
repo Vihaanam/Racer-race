@@ -77,7 +77,8 @@ function up1() {
         add_background();
         add_car_background();
         add_car_2_background();
-    } else {
+    }
+    if (car_x > 700 && winner_winner != "won") {
         winner_winner = "won";
         winner = "Car 1 won!";
         document.getElementById("result_result").innerHTML = winner;
@@ -113,7 +114,8 @@ function up2() {
         add_background();
         add_car_background();
         add_car_2_background();
-    } else {
+    }
+    if (car_2_x > 700 && winner_winner != "won") {
         winner_winner = "won";
         winner = "Car 2 won!";
         document.getElementById("result_result").innerHTML = winner;
